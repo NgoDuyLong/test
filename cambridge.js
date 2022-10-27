@@ -15,7 +15,7 @@ class DuyLongCambridge {
 
     setOptions(options) {
         this.options = options;
-       
+        
     }
 
     async findTerm(word) {
@@ -36,7 +36,7 @@ class DuyLongCambridge {
                 return node.innerText.trim();
         }
 
-        let base = 'https://dictionary.cambridge.org/vi/dictionary/english-vietnamese/';
+        let base = 'https://dictionary.cambridge.org/vi/dictionary/english/';
         let url = base + encodeURIComponent(word);
         let doc = '';
         try {
